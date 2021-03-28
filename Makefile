@@ -4,7 +4,7 @@ setup:
 	cp pre-commit-hook .git/hooks/pre-commit
 	chmod +x .git/hooks/pre-commit
 	cp .env.example .env
-	# make seed
+	make seed
 	docker-compose up -d
 
 seed:
